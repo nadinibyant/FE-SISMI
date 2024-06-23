@@ -44,7 +44,7 @@ export default function FormLoginKalab ({label1, label2, gambar}){
             </div>
             <div className="w-full lg:w-2/3 flex flex-col items-center">
                 <div className="pt-10 lg:pt-20 flex justify-center w-full">
-                    <img src="logo-sismi.svg" alt="logo-sismi" className="w-1/2 lg:w-1/5"/>
+                    <img src="/logo-sismi.svg" alt="logo-sismi" className="w-1/2 lg:w-1/5"/>
                 </div>
                 <div className="flex flex-col justify-center pt-10 lg:pt-20 w-full">
                     <p className="text-center text-secondary text-3xl font-semibold">Selamat Datang</p>    
