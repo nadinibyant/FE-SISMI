@@ -41,7 +41,7 @@ export default function DetailSuratMasuk (){
 
     return (
         <>
-        <SidebarAsisten profile={'/asisten/profile'} nama_asisten={'Nadini Annisa Byatn'}>
+        <SidebarAsisten profile={'/asisten/profile'} nama_asisten={'Asisten'}>
             <div className="p-10 ps-12">
                     <p className="text-primary font-bold text-3xl">Lihat Surat</p>
                     <Input label={'Nama Surat'} className={'text-secondary text-lg font-bold pb-1'} name={'nama_surat_mahasiswa'} disabled={'true'} value={detail.nama_surat_masuk}/>
