@@ -14,7 +14,7 @@ export default function SuratKeluar (){
       }, [navigate]); 
     return (
         <>
-        <SidebarAsisten profile={'/asisten/profile'} nama_asisten={'Nadini Annisa Byant'}>
+        <SidebarAsisten profile={'/asisten/profile'} nama_asisten={'Asisten'}>
             <SuratKeluarContent/>
         </SidebarAsisten>
         </>
