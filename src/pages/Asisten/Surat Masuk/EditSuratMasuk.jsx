@@ -79,7 +79,7 @@ export default function EditSuratMasuk (){
 
     return (
         <>
-        <SidebarAsisten profile={'/asisten/profile'} nama_asisten={'Nadini Annisa Byant'}>
+        <SidebarAsisten profile={'/asisten/profile'} nama_asisten={'Asisten'}>
             <div className="p-10 ps-12">
                 <form onSubmit={handleSubmit}>
                     <p className="text-primary font-bold text-3xl">Edit Surat Masuk</p>
