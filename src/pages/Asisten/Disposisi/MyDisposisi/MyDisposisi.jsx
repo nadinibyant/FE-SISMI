@@ -15,7 +15,7 @@ export default function MyDisposisi (){
 
     return (
         <>
-        <SidebarAsisten profile={'/asisten/profile'} nama_asisten={'Nadini Annisa Byatn'}>
+        <SidebarAsisten profile={'/asisten/profile'} nama_asisten={'Asisten'}>
             <MyDisposisiContent/>
         </SidebarAsisten>
         </>
