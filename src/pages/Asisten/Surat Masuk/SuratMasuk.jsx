@@ -15,7 +15,7 @@ export default function SuratMasuk (){
 
     return (
         <>
-        <SidebarAsisten profile={'/asisten/profile'} nama_asisten={'Nadini Annisa Byant'}>
+        <SidebarAsisten profile={'/asisten/profile'} nama_asisten={'Asisten'}>
             <SuratMasukContent/>
         </SidebarAsisten>
         </>
