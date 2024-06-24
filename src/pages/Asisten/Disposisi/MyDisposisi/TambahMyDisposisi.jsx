@@ -15,7 +15,7 @@ export default function TambahMyDisposisi (){
       
     return (
         <>
-        <SidebarAsisten profile={'/asisten/profile'} nama_asisten={'Nadini Annisa Byant'}>
+        <SidebarAsisten profile={'/asisten/profile'} nama_asisten={'Asisten'}>
             <div className="p-10">
                 <p className="font-semibold text-primary text-3xl pb-10">Tambah Disposisi</p>
                 <FormTambahDisposAsis/>
