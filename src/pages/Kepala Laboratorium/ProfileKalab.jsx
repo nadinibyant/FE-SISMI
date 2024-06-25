@@ -75,7 +75,11 @@ export default function ProfileKalab (){
 
     return (
         <>
+<<<<<<< HEAD
         <SidebarKalab profile={'/kalab/profile'} nama_kalab={'Kepala Laboratorium'}>
+=======
+        <SidebarKalab profile={'/kalab/profile'} nama_kalab={'Koordinator Asisten'}>
+>>>>>>> a4cecab83abbabfa7b79a3d76106268d4235a6d4
         <div className="p-10">
             <form onSubmit={handleSubmit}>
                  <div className="mb-6">
