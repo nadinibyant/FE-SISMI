@@ -1,8 +1,8 @@
 // TabelAction.js
-import show from "/public/icon/show2.svg";
-import accept from "/public/success.svg"
-import decline from "/public/decline.svg"
-import send from "/public/send.svg"
+import show from "/icon/show2.svg";
+import accept from "/success.svg"
+import decline from "/decline.svg"
+import send from "/send.svg"
 import s from "./tabel.module.css";
 
 export default function TabelActionAsisten({ onView, onAcc, onDecline, onSend, showButtons = { acc: true, decline: true, send: true , view:true} }) {

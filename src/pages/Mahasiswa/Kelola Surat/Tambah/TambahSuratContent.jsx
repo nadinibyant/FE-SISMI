@@ -52,7 +52,7 @@ export default function TambahSuratContent (){
                 <p className="text-primary font-bold text-3xl">Tambah Surat</p>
                 <Input label={'Nama Surat'} className={'text-secondary text-lg font-bold pb-1'} name={'nama_surat_mahasiswa'} placeholder={'Masukan nama surat Anda'} value={nama_surat_mahasiswa} onChange={(e) => setNamaSurat(e.target.value)}/>
                 <p className="pt-5 pb-5 font-bold text-xl text-secondary">File Surat (.<span className="text-red">pdf</span>)</p>
-                <UploadFile label={'Klik untuk tambah file'} icon={'/public/add file.svg'} classLabel={'text-secondary'} onFileChange={(file) => setFile(file)}/>
+                <UploadFile label={'Klik untuk tambah file'} icon={'/add file.svg'} classLabel={'text-secondary'} onFileChange={(file) => setFile(file)}/>
                 <div className="flex justify-end">
                     <ButtonSimple className={'bg-primary px-6 py-2 md:px-10 md:py-2 text-base'} label={'Tambah Surat'} type={'submit'} />
                 </div>

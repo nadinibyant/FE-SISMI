@@ -43,7 +43,7 @@ export default function SuratKeluarContent (){
             <div className="flex flex-col md:flex-row md:justify-between items-center">
                 <p className='text-primary font-semibold text-3xl mb-5 md:mb-0'>Surat Keluar</p>
                 <ButtonIcon
-                    icon={'/public/icon/material-symbols--add.svg'}
+                    icon={'/icon/material-symbols--add.svg'}
                     label={'Tambah Surat'}
                     className={'bg-primary'}
                     type={'button'}

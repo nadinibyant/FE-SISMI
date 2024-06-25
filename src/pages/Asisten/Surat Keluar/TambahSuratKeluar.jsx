@@ -61,7 +61,7 @@ export default function TambahSuratKeluar (){
                     <p className="text-primary font-bold text-3xl">Tambah Surat Keluar</p>
                     <Input label={'Nama Surat'} className={'text-secondary text-lg font-bold pb-1'} name={'nama_surat_keluar'} value={nama_surat_keluar} onChange={(e) => setNamaSuratKeluar(e.target.value)}/>
                     <p className="pt-5 pb-5 font-bold text-xl text-secondary">File Surat (.<span className="text-red">pdf</span>)</p>
-                    <UploadFile label={'Klik untuk tambah file'} icon={'/public/add file.svg'} classLabel={'text-secondary'} onFileChange={(file) => setFile(file)}/>
+                    <UploadFile label={'Klik untuk tambah file'} icon={'/add file.svg'} classLabel={'text-secondary'} onFileChange={(file) => setFile(file)}/>
                     <div className="flex justify-end">
                         <ButtonSimple className={'bg-primary px-6 py-2 md:px-10 md:py-2 text-base'} label={'Tambah Surat'} type={'submit'} />
                     </div>

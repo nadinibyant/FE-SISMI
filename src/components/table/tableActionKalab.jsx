@@ -1,5 +1,5 @@
-import show from "/public/icon/show.svg";
-import ttd from '/public/ttd.svg'
+import show from "/icon/show.svg";
+import ttd from '/ttd.svg'
 import s from "./tabel.module.css";
 
 export default function TabelActionKalab({ onView, onTTD, showButtons = { ttd: true, view: true } }) {

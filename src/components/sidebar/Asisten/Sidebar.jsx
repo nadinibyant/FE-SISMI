@@ -130,7 +130,7 @@ export default function SidebarAsisten({children, profile, nama_asisten}) {
 </AppBar>
       <Drawer variant="permanent" open={open}>
         <DrawerHeader className="mt-20 ms-10 me-10">
-            <img src="/public/logo-sismi.svg" alt="" />
+            <img src="/logo-sismi.svg" alt="" />
             {/* <p className="font-extrabold text-xl" style={{margin: 'auto'}}>Dashboard</p> */}
         <IconButton sx={{marginLeft: 2}} onClick={open ? handleDrawerClose : handleDrawerOpen}>
           {open ? <ChevronLeftIcon /> : <ChevronRightIcon />}
@@ -226,7 +226,7 @@ export default function SidebarAsisten({children, profile, nama_asisten}) {
       >
         <div className="akun flex justify-end mr-10" style={{ display: 'flex', alignItems: 'center' }}>
           <a href={profile}><p className="text-black font-bold text-2xl me-5 ">{nama_asisten}</p></a>
-          <img src="/public/profile.svg" alt=""/>
+          <img src="/profile.svg" alt=""/>
         </div>
         {children}
       </Box>

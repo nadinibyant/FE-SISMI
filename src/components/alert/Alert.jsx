@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./alert.module.css";
-import alert from "/public/alert.svg";
+import alert from "/alert.svg";
 
 const Alert = ({ isOpen, onClose, onConfirm , label}) => {
   if (!isOpen) return null;

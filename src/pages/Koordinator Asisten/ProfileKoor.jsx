@@ -75,7 +75,7 @@ export default function ProfileKoor (){
 
     return (
         <>
-        <SidebarKoor profile={'/koor/profile'} nama_koor={'Koordinator Asisten'}>
+        <SidebarKoor profile={'/koor/profile'} nama_kalab={'Koordinator Asisten'}>
         <div className="p-10">
             <form onSubmit={handleSubmit}>
                  <div className="mb-6">

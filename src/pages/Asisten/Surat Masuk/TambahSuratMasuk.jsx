@@ -68,7 +68,7 @@ export default function TambahSuratMasuk() {
           />
           <p className="pt-5 pb-5 font-bold text-xl text-secondary">File Surat (.pdf)</p>
           <UploadFile
-            icon="/public/add file.svg"
+            icon="/add file.svg"
             label="Klik untuk tambah file"
             classLabel="text-secondary"
             onFileChange={(file) => setFile(file)}

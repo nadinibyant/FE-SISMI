@@ -1,7 +1,7 @@
 // TabelAction.js
-import show from "/public/icon/show.svg";
-import edit from "/public/icon/edit.svg";
-import hapus from "/public/icon/delete.svg";
+import show from "/icon/show.svg";
+import edit from "/icon/edit.svg";
+import hapus from "/icon/delete.svg";
 import s from "./tabel.module.css";
 
 export default function TabelAction({ onView, onEdit, onDelete, showButtons = { view: true, edit: true, delete: true } }) {
