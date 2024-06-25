@@ -74,7 +74,7 @@ export default function ProfileAsisten (){
       };
     return (
         <>
-        <SidebarAsisten profile={'/asisten/profile'} nama_asisten={'Nadini Annisa Byant'}>
+        <SidebarAsisten profile={'/asisten/profile'} nama_asisten={'Asisten'}>
         <div className="p-10">
             <form onSubmit={handleSubmit}>
                  <div className="mb-6">

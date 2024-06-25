@@ -129,7 +129,7 @@ export default function SidebarMhs({children, profile, nama_mahasiswa}) {
 </AppBar>
       <Drawer variant="permanent" open={open}>
         <DrawerHeader className="mt-20 ms-10 me-10">
-            <img src="/logo-sismi-mhs.svg" alt="" />
+            <img src="/public/logo-sismi-mhs.svg" alt="" />
             {/* <p className="font-extrabold text-xl" style={{margin: 'auto'}}>Dashboard</p> */}
         <IconButton sx={{marginLeft: 2}} onClick={open ? handleDrawerClose : handleDrawerOpen}>
           {open ? <ChevronLeftIcon /> : <ChevronRightIcon />}
@@ -225,7 +225,7 @@ export default function SidebarMhs({children, profile, nama_mahasiswa}) {
       >
         <div className="akun flex justify-end mr-10" style={{ display: 'flex', alignItems: 'center' }}>
           <a href={profile}><p className="text-black font-bold text-2xl me-5 ">{nama_mahasiswa}</p></a>
-          <img src="/profile.svg" alt=""/>
+          <img src="/public/profile.svg" alt=""/>
         </div>
         {children}
       </Box>

@@ -128,7 +128,7 @@ const MiniDrawer = ({ children, profile }) => {
       <AppBar position="fixed" open={open} elevation={0} />
       <Drawer variant="permanent" open={open}>
         <DrawerHeader className="mt-20 ms-10 me-10">
-          <img src="/logo-sismi.svg" alt="" />
+          <img src="/public/logo-sismi.svg" alt="" />
           <IconButton sx={{marginLeft: 2}} onClick={open ? handleDrawerClose : handleDrawerOpen}>
             {open ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
@@ -222,7 +222,7 @@ const MiniDrawer = ({ children, profile }) => {
       >
         <div className="akun flex justify-end mr-10" style={{ display: 'flex', alignItems: 'center' }}>
           <a href={profile}><p className="text-black font-bold text-2xl me-5 ">Admin</p></a>
-          <img src="/profile.svg" alt=""/>
+          <img src="/public/profile.svg" alt=""/>
         </div>
         {children}
       </Box>

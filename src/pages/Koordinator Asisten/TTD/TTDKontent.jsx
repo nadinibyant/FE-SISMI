@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import PDFViewer from './PDFViewer';
-import TandaTanganKalab from '../../../../api/Kepala Laboratorium/Disposisi/TandaTanganKalab';
+import TTDKordas from '../../../api/Koordinator Asisten/TTDKordas';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
 
-export default function TTDKalab() {
+export default function TTDKontent() {
     const navigate = useNavigate()
   const { id_disposisi, nama_surat, jenisSurat } = useParams();
   const [coordinate, setCoordinate] = useState({ x: null, y: null });
@@ -25,13 +25,13 @@ export default function TTDKalab() {
     console.log(y);
 
     try {
-        const response = await TandaTanganKalab(id_disposisi, x, y)
+        const response = await TTDKordas(id_disposisi, x, y)
         if (response.success) {
             Swal.fire({
                 icon: 'success',
                 text: response.message,
             });
-            navigate('/kalab/disposisiSurat')
+            navigate('/koor/disposisiSurat')
         } else {
             Swal.fire({
                 icon: 'error',

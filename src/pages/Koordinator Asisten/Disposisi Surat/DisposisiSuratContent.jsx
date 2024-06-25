@@ -11,10 +11,11 @@ export default function DisposisiSuratContent() {
       const response = await ListDisposisi();
       if (response.success) {
         const transformedData = response.data.map((item, index) => ({
-          id: index + 1, // If you need a sequential number
-          nama_surat: item.dataSuratMhs.file_surat_mahasiswa,
+          id: index + 1, 
+          nama_surat: item.dataSuratMhs ? item.dataSuratMhs.file_surat_mahasiswa : (item.dataSuratKeluar ? item.dataSuratKeluar.file_surat_keluar : ''),
           status_disposisi: item.status_disposisi,
-          // Add other necessary fields if needed
+          id_disposisi: item.id_disposisi,
+          jenisSurat: item.dataSuratMhs ? 'suratMahasiswa' : 'suratKeluar',
         }));
         setData(transformedData);
       } else {

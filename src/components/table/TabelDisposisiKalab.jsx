@@ -45,7 +45,7 @@ export default function TabelDisposisiKalab({ className, data, columns, bg_head,
               <td className="p-2">
                 <TabelActionKalab 
                 onView={() => navigate(`${onView}/${row.nama_surat}`)}
-                onTTD={() => navigate(`${onTTD}`)}
+                onTTD={() => navigate(`${onTTD}/${row.id_disposisi}/${row.nama_surat}/${row.jenisSurat}`)}
                 showButtons={{ttd:true, view:true}}
                 />
               </td>

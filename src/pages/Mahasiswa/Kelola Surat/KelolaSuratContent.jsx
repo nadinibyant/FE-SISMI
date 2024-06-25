@@ -56,7 +56,7 @@ export default function KelolaSuratContent (){
             <div className="flex flex-col md:flex-row md:justify-between items-center">
                 <p className='text-primary font-semibold text-3xl mb-5 md:mb-0'>Semua Surat</p>
                 <ButtonIcon
-                    icon={'/icon/material-symbols--add.svg'}
+                    icon={'/public/icon/material-symbols--add.svg'}
                     label={'Tambah Surat'}
                     className={'bg-primary'}
                     type={'button'}

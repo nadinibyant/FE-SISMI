@@ -75,11 +75,11 @@ export default function ProfileKoor (){
 
     return (
         <>
-        <SidebarKoor profile={'/koor/profile'} nama_koor={'Nadini Annisa Byant'}>
+        <SidebarKoor profile={'/koor/profile'} nama_koor={'Koordinator Asisten'}>
         <div className="p-10">
             <form onSubmit={handleSubmit}>
                  <div className="mb-6">
-                    <Input label={'Nama Koordinator Asisten'} name={'nama_asisten'}  type={'text'} className={'text-secondary font-bold text-xl'}  onChange={(e) => setNamaAsisten(e.target.value)}/>
+                    <Input label={'Nama Koordinator Asisten'} name={'nama_asisten'}  type={'text'} className={'text-secondary font-bold text-xl'}  onChange={(e) => setNamaAsisten(e.target.value)} value={nama_asisten}/>
                 </div>
                 <InputFile  placeholder={ttd || 'Klik Pilih untuk memilih surat'} onChange={handleFileChange}/>
                 <img src={`/api/ttd/${ttd}`} className="w-1/2"/>

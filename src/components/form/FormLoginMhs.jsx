@@ -40,8 +40,8 @@ export default function FormLoginMhs (){
     return (
         <div className="flex flex-col lg:flex-row h-screen">
             <div className="bg-blue-gradient2 flex flex-col items-center justify-center w-full lg:w-1/3 h-1/3 lg:h-full p-4 lg:p-0 flex-shrink-0">
-                <img src="/sismi-lbi.svg" alt="sismi-lbi" className="w-1/2 lg:w-auto"/>
-                <img src={'/logo-mhs.svg'} alt="bg-login-mahasiswa" className="object-cover w-7/12 pt-10"/>
+                <img src="/public/sismi-lbi.svg" alt="sismi-lbi" className="w-1/2 lg:w-auto"/>
+                <img src={'/public/logo-mhs.svg'} alt="bg-login-mahasiswa" className="object-cover w-7/12 pt-10"/>
             </div>
             <div className="w-full lg:w-2/3 flex flex-col items-center justify-center h-2/3 lg:h-full overflow-y-auto hide-scrollbar flex-shrink-0">
                 <p className='text-primary font-black text-3xl pt-10 pb-5 lg:pt-20 lg:pb-10'>Selamat Datang Kembali</p>

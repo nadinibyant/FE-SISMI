@@ -11,9 +11,11 @@ export default function DisposisiSuratContent() {
         const response = await ListDisposisiKalab();
         if (response.success) {
           setData(response.data.map((item, index) => ({
-            id: item.id_disposisi,
-            nama_surat: item.dataSuratMhs.file_surat_mahasiswa,
+            id: index + 1, 
+            nama_surat: item.dataSuratMhs ? item.dataSuratMhs.file_surat_mahasiswa : (item.dataSuratKeluar ? item.dataSuratKeluar.file_surat_keluar : ''),
             status_disposisi: item.status_disposisi,
+            id_disposisi: item.id_disposisi,
+            jenisSurat: item.dataSuratMhs ? 'suratMahasiswa' : 'suratKeluar',
           })));
         } else {
           console.error("Error fetching data:", response.message);

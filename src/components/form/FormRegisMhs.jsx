@@ -48,8 +48,8 @@ export default function FormRegisMhs() {
     return (
         <div className="flex flex-col lg:flex-row h-screen">
             <div className="bg-blue-gradient2 lg:w-1/3 flex flex-col items-center justify-center p-4 lg:p-0">
-                <img src="/sismi-lbi.svg" alt="sismi-lbi" className="w-3/4 lg:w-8/12 pb-10"/>
-                <img src="/logo-mhs.svg" alt="bg-login-mahasiswa" className="object-cover w-7/12 pt-10 hidden lg:block"/>
+                <img src="/public/sismi-lbi.svg" alt="sismi-lbi" className="w-3/4 lg:w-8/12 pb-10"/>
+                <img src="/public/logo-mhs.svg" alt="bg-login-mahasiswa" className="object-cover w-7/12 pt-10 hidden lg:block"/>
             </div>
 
             <div className="w-full lg:w-2/3 flex flex-col items-center overflow-y-auto h-full lg:h-screen hide-scrollbar">

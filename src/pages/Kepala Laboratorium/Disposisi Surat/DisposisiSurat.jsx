@@ -14,7 +14,7 @@ export default function DisposisiSuratKalab (){
       }, [navigate]); 
     return (
         <>
-        <SidebarKalab profile={'/kalab/profile'} nama_kalab={'Kepala Laboratorium'}>
+        <SidebarKalab profile={'/profile/kalab'} nama_kalab={'Kepala Laboratorium'}>
             <DisposisiSuratContent/>
         </SidebarKalab>
         </>

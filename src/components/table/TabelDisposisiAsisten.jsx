@@ -112,8 +112,10 @@ export default function TabelDisposisiAsisten({ className, data, columns, bg_hea
         return "bg-primary text-white px-5 py-2";
       case "ditolak":
         return "bg-redDark text-white px-5 py-2";
-      case "Selesai":
+      case "selesai":
         return "bg-tersedia text-white px-5 py-2";
+      case "selesai TTD":
+        return "bg-primary text-white px-5 py-2";
       default:
         return "bg-gray-500 text-white px-5 py-2";
     }
