@@ -12,7 +12,7 @@ export default async function TampilSuratMhs (){
 
     
     try {
-        const response = await fetch(`/api/semuaSurat`, requestOptions);
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/semuaSurat`, requestOptions);
         const result = await response.json();
         return result
       } catch (error) {

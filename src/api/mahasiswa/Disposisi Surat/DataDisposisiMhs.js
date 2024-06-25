@@ -11,7 +11,7 @@ export default async function DataDisposisiMhs (){
     }
 
     try {
-        const response = await fetch(`/api/dataDisposisiMhs`, requestOptions);
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/dataDisposisiMhs`, requestOptions);
         const result = await response.json();
         return result
       } catch (error) {

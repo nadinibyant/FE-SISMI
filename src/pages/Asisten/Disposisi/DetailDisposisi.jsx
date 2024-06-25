@@ -43,8 +43,8 @@ export default function DetailDisposisiAsiten() {
   const namaSurat = suratData?.nama_surat_mahasiswa || suratData?.nama_surat_keluar;
   const fileSurat = suratData?.file_surat_mahasiswa || suratData?.file_surat_keluar;
   const pdfUrl = detail.dataSuratMhs
-    ? `/api/fileSuratMahasiswa/${fileSurat}`
-    : `/api/fileSuratKeluar/${fileSurat}`;
+    ? `${import.meta.env.VITE_API_BASE_URL}/fileSuratMahasiswa/${fileSurat}`
+    : `${import.meta.env.VITE_API_BASE_URL}/fileSuratKeluar/${fileSurat}`;
 
   return (
     <>

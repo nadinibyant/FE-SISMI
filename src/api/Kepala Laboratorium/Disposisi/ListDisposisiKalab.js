@@ -11,7 +11,7 @@ export default async function ListDisposisiKalab (){
     }
 
     try {
-        const response = await fetch('/api/listDisposisiKalab', requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/listDisposisiKalab`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

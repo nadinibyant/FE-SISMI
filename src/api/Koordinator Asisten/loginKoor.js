@@ -14,7 +14,7 @@ export default async function LoginAsisten (nama, kataSandi){
     }
 
     try {
-        const response = await fetch('/api/loginAsisten', requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/loginAsisten`, requestOptions)
         const result = await response.json()
         const token = result.token
         if (token) {

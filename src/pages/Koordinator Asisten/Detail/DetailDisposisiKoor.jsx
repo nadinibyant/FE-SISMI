@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react'
 export default function DetailDisposisiKoor (){
     const navigate = useNavigate()
     const { nama_surat } = useParams()
-    const [pdfUrl, setPdfUrl] = useState(`/api/fileSuratMahasiswa/${nama_surat}`)
+    const [pdfUrl, setPdfUrl] = useState(`${import.meta.env.VITE_API_BASE_URL}/fileSuratMahasiswa/${nama_surat}`)
 
     useEffect(() => {
         const token = localStorage.getItem('tokenAsisten');
@@ -25,7 +25,7 @@ export default function DetailDisposisiKoor (){
                 }
             } catch (error) {
                 console.error('Error checking PDF URL:', error);
-                setPdfUrl(`/api/fileSuratKeluar/${nama_surat}`);
+                setPdfUrl(`${import.meta.env.VITE_API_BASE_URL}/fileSuratKeluar/${nama_surat}`);
             }
         };
 

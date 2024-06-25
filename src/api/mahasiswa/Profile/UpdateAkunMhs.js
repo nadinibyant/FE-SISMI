@@ -19,7 +19,7 @@ export default async function UpdateAkunMhs (nama_mahasiswa,  alamat_mahasiswa, 
     }
 
     try {
-        const response = await fetch('/api/editAkunMhs', requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/editAkunMhs`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

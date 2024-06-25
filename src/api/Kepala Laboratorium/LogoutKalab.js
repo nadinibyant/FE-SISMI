@@ -13,7 +13,7 @@ export default async function LogoutKalab (){
     }
 
     try {
-        const response = await fetch(`/api/logoutKalab`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/logoutKalab`, requestOptions)
         const results = await response.json()
         if (results.success) {
             localStorage.removeItem('tokenKalab')

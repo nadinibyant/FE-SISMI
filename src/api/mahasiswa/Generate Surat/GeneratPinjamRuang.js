@@ -8,7 +8,7 @@ export const GeneratePinjamRuang = async (nama_generate, keperluan_peminjaman_ru
       body: JSON.stringify({ nama_generate, keperluan_peminjaman_ruangan, tanggal_peminjaman_ruangan, waktu_peminjaman_ruangan })
   };
 
-  const response = await fetch(`/api/generatePinjamRuang/${id_jenis}`, requestOptions);
+  const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/generatePinjamRuang/${id_jenis}`, requestOptions);
   if (!response.ok) {
       throw new Error('Data surat tidak tersedia');
   }

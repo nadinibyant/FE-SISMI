@@ -82,7 +82,7 @@ export default function ProfileKalab (){
                     <Input label={'Nama Kepala Laboratorium'} name={'nama_kalab'} value={nama_kalab}  type={'text'} className={'text-secondary font-bold text-xl'} onChange={(e) => setNamaKalab(e.target.value)}/>
                 </div>
                 <InputFile  placeholder={ttd || 'Klik Pilih untuk memilih surat'} onChange={handleFileChange}/>
-                <img src={`/api/ttd/${ttd}`} className="w-1/2"/>
+                <img src={`${import.meta.env.VITE_API_BASE_URL}/ttd/${ttd}`} className="w-1/2"/>
                 <div className="flex w-full">
                     <InputPass label={'Password Lama'} className={'text-secondary text-xl font-bold'} classDiv={'pe-10'} name={'password_lama'} onChange={(e) => setPasswordLama(e.target.value)}/>
                     <InputPass label={'Password Baru'} className={'text-secondary text-xl font-bold'} name={'password_baru'} onChange={(e) => setPasswordBaru(e.target.value)} />

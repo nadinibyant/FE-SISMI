@@ -11,7 +11,7 @@ export default async function TampilDisposisiSurat (){
     }
 
     try {
-        const response = await fetch('/api/dataDisposisiSurat', requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/dataDisposisiSurat`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

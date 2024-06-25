@@ -18,7 +18,7 @@ export default async function TambahSuratMasuk (nama_surat_masuk, file) {
     }
 
     try {
-        const response = await fetch('/api/tambahSuratMasuk', requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/tambahSuratMasuk`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

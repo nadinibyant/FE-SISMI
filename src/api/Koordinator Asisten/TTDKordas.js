@@ -17,7 +17,7 @@ export default async function TTDKordas (id_disposisi, x,y){
     }
 
     try {
-        const response = await fetch(`/api/ttdKordas/${id_disposisi}`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/ttdKordas/${id_disposisi}`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

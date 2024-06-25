@@ -8,7 +8,7 @@ export const downloadLaporanSuratMasuk = async (tanggal_awal, tanggal_akhir, tok
         body: JSON.stringify({ tanggal_awal, tanggal_akhir })
     };
 
-    const response = await fetch('/api/laporanMasuk', requestOptions);
+    const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/laporanMasuk`, requestOptions);
     if (!response.ok) {
         throw new Error('Data surat tidak tersedia');
     }

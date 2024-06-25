@@ -18,7 +18,7 @@ export default async function UpdateAdmin(username, password_lama, password_baru
   };
 
   try {
-    const response = await fetch('/api/updateAdmin', requestOptions);
+    const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/updateAdmin`, requestOptions);
     const results = await response.json();
     return results;
   } catch (error) {

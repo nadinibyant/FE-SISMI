@@ -11,7 +11,7 @@ export default async function ListSuratKeluar (){
     }
 
     try {
-        const response = await fetch(`/api/listSuratKeluar`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/listSuratKeluar`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

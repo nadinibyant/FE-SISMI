@@ -15,7 +15,7 @@ export default async function RegisterMahasiswa(nim_mahasiswa, nama_mahasiswa, a
     };
   
     try {
-      const response = await fetch(`/api/registerMhs`, requestOptions);
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/registerMhs`, requestOptions);
       const result = await response.json();
       return result;
     } catch (error) {

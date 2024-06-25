@@ -11,7 +11,7 @@ export default async function DeleteMyDisposisi (id_disposisi) {
     }
 
     try {
-        const response = await fetch(`/api/deleteMyDisposisi/${id_disposisi}`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/deleteMyDisposisi/${id_disposisi}`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

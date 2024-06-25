@@ -8,7 +8,7 @@ export const downloadLaporanSuratKeluar = async (tanggal_awal, tanggal_akhir, to
         body: JSON.stringify({ tanggal_awal, tanggal_akhir })
     };
 
-    const response = await fetch('/api/laporanKeluar', requestOptions);
+    const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/laporanKeluar`, requestOptions);
     console.log(response);
     if (!response.ok) {
         throw new Error('Data surat tidak tersedia');

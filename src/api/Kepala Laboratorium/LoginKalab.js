@@ -14,7 +14,7 @@ export default async function LoginKalab (nip_kalab, password_kalab){
     }
 
     try {
-        const response = await fetch('/api/loginKalab', requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/loginKalab`, requestOptions)
         const result = await response.json()
         const token = result.token
         if (token) {

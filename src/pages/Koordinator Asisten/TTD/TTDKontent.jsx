@@ -12,9 +12,9 @@ export default function TTDKontent() {
   let pdfUrl;
 
   if (jenisSurat == 'suratMahasiswa') {
-    pdfUrl = `/api/fileSuratMahasiswa/${nama_surat}`;
+    pdfUrl = `${import.meta.env.VITE_API_BASE_URL}/fileSuratMahasiswa/${nama_surat}`;
   } else {
-    pdfUrl = `/api/fileSuratKeluar/${nama_surat}`;
+    pdfUrl = `${import.meta.env.VITE_API_BASE_URL}/fileSuratKeluar/${nama_surat}`;
   }
 
   let url = `${pdfUrl}`

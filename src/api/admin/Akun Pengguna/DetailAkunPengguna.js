@@ -11,7 +11,7 @@ export default async function DetailAkunPengguna (nama){
     }
 
     try {
-        const response = await fetch(`/api/detailPengguna/${nama}`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/detailPengguna/${nama}`, requestOptions)
         const results = await response.json()
         console.log(results);
         return results

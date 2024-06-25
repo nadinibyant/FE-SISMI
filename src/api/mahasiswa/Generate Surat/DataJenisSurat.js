@@ -15,7 +15,7 @@ export default async function semuaDataJenisSurat() {
     };
   
     try {
-      const response = await fetch(`/api/allJenisSurat`, requestOptions);
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/allJenisSurat`, requestOptions);
       const result = await response.json()
       return result
     } catch (error) {

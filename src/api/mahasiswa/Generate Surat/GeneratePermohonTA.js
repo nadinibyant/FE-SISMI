@@ -8,7 +8,7 @@ export const GeneratePermohonTA = async (nama_generate, id_jenis, token) => {
         body: JSON.stringify({ nama_generate})
     };
   
-    const response = await fetch(`/api/generatePermohonTA/${id_jenis}`, requestOptions);
+    const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/generatePermohonTA/${id_jenis}`, requestOptions);
     if (!response.ok) {
         throw new Error('Data surat tidak tersedia');
     }

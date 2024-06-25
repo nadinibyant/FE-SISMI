@@ -17,7 +17,7 @@ export default async function TambahDataBarang(nama_barang, status_barang) {
     };
   
     try {
-      const response = await fetch('/api/tambahBarang', requestOptions);
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/tambahBarang`, requestOptions);
       const results = await response.json();
       return results;
     } catch (error) {

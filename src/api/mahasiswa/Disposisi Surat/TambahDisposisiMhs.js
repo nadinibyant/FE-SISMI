@@ -17,7 +17,7 @@ export default async function TambahDisposisiMhs (id_surat_mahasiswa, tujuan_dis
     }
 
     try {
-        const response = await fetch(`/api/tambahDisposisiMhs`, requestOptions);
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/tambahDisposisiMhs`, requestOptions);
         const result = await response.json();
         return result
       } catch (error) {

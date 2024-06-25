@@ -17,7 +17,7 @@ export default async function TandaTanganKalab (id_disposisi, x,y){
     }
 
     try {
-        const response = await fetch(`/api/ttdKalab/${id_disposisi}`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/ttdKalab/${id_disposisi}`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

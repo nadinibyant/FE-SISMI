@@ -13,7 +13,7 @@ export default async function LogoutAsisten (){
     }
 
     try {
-        const response = await fetch(`/api/logoutAsisten`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/logoutAsisten`, requestOptions)
         const results = await response.json()
         if (results.success) {
             localStorage.removeItem('tokenAsisten')

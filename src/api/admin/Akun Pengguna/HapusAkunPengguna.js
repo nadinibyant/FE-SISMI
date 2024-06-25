@@ -13,7 +13,7 @@ export default async function HapusAkunPengguna(nama){
     }
 
     try {
-        const response = await fetch(`/api/hapusPengguna/${nama}`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/hapusPengguna/${nama}`, requestOptions)
         const results = await response.json()
         if (results.success) {
             Swal.fire({

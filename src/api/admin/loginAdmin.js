@@ -14,7 +14,7 @@ export default async function loginAdmin(username, password){
     }
 
     try {
-        const response = await fetch(`/api/loginAdmin`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/loginAdmin`, requestOptions)
         const results = await response.json()
         console.log(results)
         const token = results.token

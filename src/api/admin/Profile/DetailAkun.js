@@ -11,7 +11,7 @@ export default async function DetailAkun (){
     }
 
     try {
-        const response = await fetch('/api/detailAkunAdmin', requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/detailAkunAdmin`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

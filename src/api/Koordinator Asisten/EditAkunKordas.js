@@ -20,7 +20,7 @@ export default async function EditAkunKordas (file, nama_asisten, password_lama,
     }
 
     try {
-        const response = await fetch('/api/editAkunKordas', requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/editAkunKordas`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

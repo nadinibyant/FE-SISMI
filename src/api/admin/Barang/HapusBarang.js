@@ -13,7 +13,7 @@ export default async function HapusBarang (id_barang){
     }
     
     try {
-        const response = await fetch(`/api/hapusBarang/${id_barang}`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/hapusBarang/${id_barang}`, requestOptions)
         const result = await response.json()
         if (result.success) {
             Swal.fire({

@@ -18,7 +18,7 @@ export default async function EditSuratMasuk (nama_surat_masuk, file, no_surat_m
     }
 
     try {
-        const response = await fetch(`/api/editSuratMasuk/${no_surat_masuk}`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/editSuratMasuk/${no_surat_masuk}`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

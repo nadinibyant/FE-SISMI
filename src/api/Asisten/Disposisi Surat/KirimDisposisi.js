@@ -11,7 +11,7 @@ export default async function KirimDisposisi (id_disposisi){
     }
 
     try {
-        const response = await fetch(`/api/kirimDisposisi/${id_disposisi}`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/kirimDisposisi/${id_disposisi}`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

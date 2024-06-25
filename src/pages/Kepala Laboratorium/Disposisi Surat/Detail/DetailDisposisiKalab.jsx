@@ -1,32 +1,3 @@
-// import SidebarKalab from "../../../../components/sidebar/Kalab/Sidebar";
-// import Pdf from "../../../../components/elements/Pdf";
-// import { useNavigate, useParams } from 'react-router-dom';
-// import { useEffect } from 'react';
-
-// export default function DetailDisposisiKalab() {
-//     const navigate = useNavigate();
-
-//     useEffect(() => {
-//         const token = localStorage.getItem('tokenKalab');
-//         if (!token) {
-//             navigate('/notAllowed');
-//         }
-//     }, [navigate]); 
-
-//     const { file_surat } = useParams();
-//     return (
-//         <>
-//             <SidebarKalab profile={'/profile/kalab'} nama_kalab={'Kepala Laboratorium'}>
-//                 <div className="p-10 ps-12">
-//                     <p className="text-primary font-bold text-3xl">Lihat Surat</p>
-//                     <p className="pt-5 text-secondary font-bold text-lg">File Surat (<span className="text-red">.pdf</span>)</p>
-//                     <Pdf pdfUrl={`/api/fileSuratMahasiswa/${file_surat}`} />
-//                 </div>
-//             </SidebarKalab>
-//         </>
-//     );
-// }
-
 import SidebarKalab from "../../../../components/sidebar/Kalab/Sidebar";
 import Pdf from "../../../../components/elements/Pdf";
 import { useNavigate, useParams } from 'react-router-dom'
@@ -35,7 +6,7 @@ import { useEffect, useState } from 'react'
 export default function DetailDisposisiKoor (){
     const navigate = useNavigate()
     const { file_surat } = useParams()
-    const [pdfUrl, setPdfUrl] = useState(`/api/fileSuratMahasiswa/${file_surat}`)
+    const [pdfUrl, setPdfUrl] = useState(`${import.meta.env.VITE_API_BASE_URL}/fileSuratMahasiswa/${file_surat}`)
 
     useEffect(() => {
         const token = localStorage.getItem('tokenKalab');
@@ -53,7 +24,7 @@ export default function DetailDisposisiKoor (){
                 }
             } catch (error) {
                 console.error('Error checking PDF URL:', error);
-                setPdfUrl(`/api/fileSuratKeluar/${file_surat}`);
+                setPdfUrl(`${import.meta.env.VITE_API_BASE_URL}/fileSuratKeluar/${file_surat}`);
             }
         };
 

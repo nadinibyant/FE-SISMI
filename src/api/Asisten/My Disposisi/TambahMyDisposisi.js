@@ -17,7 +17,7 @@ export default async function TambahMyDisposisi (no_surat_keluar, tujuan_disposi
     }
 
     try {
-        const response = await fetch(`/api/tambahMyDisposisi`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/tambahMyDisposisi`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

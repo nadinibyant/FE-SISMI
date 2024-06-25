@@ -81,7 +81,7 @@ export default function ProfileAsisten (){
                     <Input label={'Nama Lengkap'} name={'nama_asisten'} value={nama_asisten} type={'text'} className={'text-secondary font-bold text-xl'} onChange={(e) => setNamaAsisten(e.target.value)}/>
                 </div>
                 <InputFile  placeholder={ttd || 'Klik Pilih untuk memilih surat'} onChange={handleFileChange}/>
-                <img src={`/api/ttd/${ttd}`} className="w-1/2"/>
+                <img src={`${import.meta.env.VITE_API_BASE_URL}/ttd/${ttd}`} className="w-1/2"/>
                 <div className="flex w-full">
                 <InputPass label={'Password Lama'} className={'text-secondary text-xl font-bold'} classDiv={'pe-10'} name={'password_lama'} onChange={(e) => setPasswordLama(e.target.value)}/>
                 <InputPass label={'Password Baru'} className={'text-secondary text-xl font-bold'} name={'password_baru'} onChange={(e) => setPasswordBaru(e.target.value)}/>

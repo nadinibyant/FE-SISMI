@@ -14,7 +14,7 @@ export default async function LoginMahasiswa (nim_mahasiswa, password_mahasiswa)
     }
 
     try {
-        const response = await fetch(`/api/loginMhs`, requestOptions);
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/loginMhs`, requestOptions);
         const result = await response.json();
         const token = result.token
         if (token) {

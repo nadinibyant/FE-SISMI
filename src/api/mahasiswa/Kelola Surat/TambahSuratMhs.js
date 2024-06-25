@@ -16,7 +16,7 @@ export default async function TambahSuratMhs(nama_surat_mahasiswa, file){
     }
 
     try {
-        const response = await fetch(`/api/tambahSurat`, requestOptions);
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/tambahSurat`, requestOptions);
         const result = await response.json();
         return result
       } catch (error) {

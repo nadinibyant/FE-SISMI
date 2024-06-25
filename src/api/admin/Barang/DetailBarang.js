@@ -11,7 +11,7 @@ export default async function DetailBarang (id_barang){
     }
 
     try {
-        const response = await fetch(`/api/detailBarang/${id_barang}`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/detailBarang/${id_barang}`, requestOptions)
         const result = await response.json()
         return result
     } catch (error) {

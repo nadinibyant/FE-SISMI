@@ -11,7 +11,7 @@ export default async function DetailAkunKordas(){
     }
 
     try {
-        const response = await fetch('/api/detailAkunKordas', requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/detailAkunKordas`, requestOptions)
         const resulst = await response.json()
         return resulst
     } catch (error) {

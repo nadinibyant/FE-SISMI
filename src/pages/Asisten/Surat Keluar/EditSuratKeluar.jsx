@@ -84,8 +84,8 @@ export default function EditSuratKeluar (){
                     <p className="text-primary font-bold text-3xl">Edit Surat Keluar</p>
                     <Input label={'Nama Surat'} className={'text-secondary text-lg font-bold pb-1'} name={'nama_surat_keluar'} value={nama_surat_keluar} onChange={(e) => setNamaSuratKeluar(e.target.value)}/>
                     <p className="pt-5 text-secondary font-bold  text-lg">File Surat (<span>.pdf)</span></p>
-                    <Pdf pdfUrl={`/api/fileSuratKeluar/${detail.file_surat_keluar}`}/>
-                    <InputFile  placeholder={ detail.file_surat_keluar || 'Klik pilih untuk memilih surat'}/>
+                    <Pdf pdfUrl={`${import.meta.env.VITE_API_BASE_URL}/fileSuratKeluar/${detail.file_surat_keluar}`}/>
+                    <InputFile  placeholder={ detail.file_surat_keluar || 'Klik pilih untuk memilih surat'} onChange={handleFileChange}/>
                     <div className="flex justify-end">
                         <ButtonSimple className={'bg-primary font-semibold text-base text-white'} label={'Simpan Surat'} type={'submit'}/>
                     </div>

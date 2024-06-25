@@ -36,7 +36,7 @@ export default function DetailContent() {
     return <p>Loading...</p>;
   }
 
-  const signatureSrc = detail.ttd_asisten ? `/api/ttd/${detail.ttd_asisten}` : detail.ttd_kalab ? `/api/ttd/${detail.ttd_kalab}` : '';
+  const signatureSrc = detail.ttd_asisten ? `${import.meta.env.VITE_API_BASE_URL}/ttd/${detail.ttd_asisten}` : detail.ttd_kalab ? `${import.meta.env.VITE_API_BASE_URL}/ttd/${detail.ttd_kalab}` : '';
 
   return (
     <div className="p-4 md:p-10 lg:px-14">

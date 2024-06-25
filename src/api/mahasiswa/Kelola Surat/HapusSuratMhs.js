@@ -11,7 +11,7 @@ export default async function HapusSuratMhs (id_surat_mahasiswa){
     }
 
     try {
-        const response = await fetch(`/api/hapusSurat/${id_surat_mahasiswa}`, requestOptions);
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/hapusSurat/${id_surat_mahasiswa}`, requestOptions);
         const result = await response.json();
         return result
       } catch (error) {

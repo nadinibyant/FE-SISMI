@@ -46,7 +46,7 @@ export default function DetailSuratMasuk (){
                     <p className="text-primary font-bold text-3xl">Lihat Surat</p>
                     <Input label={'Nama Surat'} className={'text-secondary text-lg font-bold pb-1'} name={'nama_surat_mahasiswa'} disabled={'true'} value={detail.nama_surat_masuk}/>
                     <p className="pt-5 text-secondary font-bold  text-lg">File Surat (<span>.pdf)</span></p>
-                    <Pdf pdfUrl={`/api/fileSuratMasuk/${detail.file_surat_masuk}`}/>
+                    <Pdf pdfUrl={`${import.meta.env.VITE_API_BASE_URL}/fileSuratMasuk/${detail.file_surat_masuk}`}/>
             </div>
         </SidebarAsisten>
         </>

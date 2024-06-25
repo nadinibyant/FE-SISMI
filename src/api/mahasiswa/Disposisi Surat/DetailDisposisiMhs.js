@@ -10,7 +10,7 @@ export default async function DetailDisposisiMhs(id_disposisi) {
     };
 
     try {
-        const response = await fetch(`/api/detailDisposisiMhs/${id_disposisi}`, requestOptions);
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/detailDisposisiMhs/${id_disposisi}`, requestOptions);
         const result = await response.json();
         return result
     } catch (error) {

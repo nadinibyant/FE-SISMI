@@ -11,7 +11,7 @@ export default async function DetailSuratKeluar (no_surat_keluar){
     }
 
     try {
-        const response = await fetch(`/api/detailSuratKeluar/${no_surat_keluar}`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/detailSuratKeluar/${no_surat_keluar}`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

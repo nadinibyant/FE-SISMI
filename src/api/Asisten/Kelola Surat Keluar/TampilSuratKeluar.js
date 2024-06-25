@@ -11,7 +11,7 @@ export default async function TampilSuratKeluar (){
     }
 
     try {
-        const response = await fetch('/api/tampilSuratKeluar', requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/tampilSuratKeluar`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

@@ -13,7 +13,7 @@ export default async function LogoutMahasiswa (){
     }
 
     try {
-        const response = await fetch(`/api/logoutMhs`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/logoutMhs`, requestOptions)
         const results = await response.json()
         if (results.success) {
             localStorage.removeItem('tokenMhs')

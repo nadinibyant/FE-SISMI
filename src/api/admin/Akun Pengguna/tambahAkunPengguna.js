@@ -21,7 +21,7 @@ export default async function TambahAkunPengguna(file, nama, password, role, nip
     };
 
     try {
-        const response = await fetch('/api/tambahPengguna', requestOptions);
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/tambahPengguna`, requestOptions);
         const results = await response.json();
         console.log(results);
         return results;

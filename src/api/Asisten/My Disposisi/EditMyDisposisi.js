@@ -16,7 +16,7 @@ export default async function EditMyDisposisi (id_disposisi, tujuan_disposisi){
     }
 
     try {
-        const response = await fetch(`/api/editMyDisposisi/${id_disposisi}`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/editMyDisposisi/${id_disposisi}`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

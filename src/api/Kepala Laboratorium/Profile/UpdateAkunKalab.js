@@ -20,7 +20,7 @@ export default async function UpdateAkunKalab (nama_kalab, file, password_lama, 
     }
 
     try {
-        const response = await fetch('/api/updateAkunKalab', requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/updateAkunKalab`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

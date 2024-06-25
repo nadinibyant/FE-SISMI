@@ -11,7 +11,7 @@ export default async function ListMyDisposisi (){
   }
 
     try {
-        const response = await fetch(`/api/tampilMyDisposisi`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/tampilMyDisposisi`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

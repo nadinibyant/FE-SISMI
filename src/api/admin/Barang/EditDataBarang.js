@@ -17,7 +17,7 @@ export default async function EditDataBarang(nama_barang, status_barang, id_bara
     }
 
     try {
-        const response = await fetch(`/api/editBarang/${id_barang}`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/editBarang/${id_barang}`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

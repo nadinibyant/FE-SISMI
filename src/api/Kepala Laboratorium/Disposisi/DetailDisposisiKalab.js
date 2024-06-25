@@ -11,7 +11,7 @@ export default async function DetailDisposisiKalab (id_disposisi){
     }
 
     try {
-        const response = await fetch(`/api/detailDisposisiKalab/${id_disposisi}`, requestOptions)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/detailDisposisiKalab/${id_disposisi}`, requestOptions)
         const results = await response.json()
         return results
     } catch (error) {

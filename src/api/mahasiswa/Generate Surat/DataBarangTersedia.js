@@ -11,7 +11,7 @@ export default async function DataBarangTersedia (){
     }
 
     try {
-        const response = await fetch(`/api/dataBarangMhs`, requestOptions);
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/dataBarangMhs`, requestOptions);
         const result = await response.json()
         return result
       } catch (error) {
